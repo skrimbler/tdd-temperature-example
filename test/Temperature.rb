@@ -25,6 +25,6 @@ class TemperatureTest < Minitest::Test
 
     def test_42_celsius_to_kelvin
         temperature = Temperature.new(42)
-        assert_equal(313.15, temperature.to_kelvin)
+        assert_equal(315.15, temperature.to_kelvin)
     end
 end

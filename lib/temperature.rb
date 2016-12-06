@@ -4,6 +4,7 @@ class Temperature
 
     FAHRENHEIT_OFFSET = 32
     FAHRENHEIT_SLOPE = Rational(9,5)
+    KELVIN = 273.15
 
 
     def initialize temperature
@@ -16,7 +17,8 @@ class Temperature
     end
 
     def to_kelvin
-      273.15
+      temperature + KELVIN
     end
+
 
 end
